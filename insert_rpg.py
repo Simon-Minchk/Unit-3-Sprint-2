@@ -10,9 +10,9 @@ import sqlite3
 import pymongo
 from dotenv import load_dotenv
 
-DB_FILEPATE = (os.path.join(os.path.dirname(__file__), '..', 'u3S1day1', 'rpg_db.sqlite3'))
+DB_FILEPATH = (os.path.join(os.path.dirname(__file__), '..', 'u3S1day1', 'rpg_db.sqlite3'))
 
-connection = sqlite3.connect(DB_FILEPATE)
+connection = sqlite3.connect(DB_FILEPATH)
 
 connection.row_factory = sqlite3.Row
 cursor = connection.cursor()
